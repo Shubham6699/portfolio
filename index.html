@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Shubham Gunjal — Data &amp; AI-Automation Engineer</title>
-<meta name="description" content="Shubham Gunjal — mechanical engineer building data and AI-automation systems for industrial operations. Experience at Mercedes-Benz, Škoda/VW, Bosch and Rieter." />
+<title>Shubham Gunjal — Robotics · Mechatronics · Agentic AI</title>
+<meta name="description" content="Shubham Gunjal — mechanical engineer and Master's student in Computational Engineering (Mechatronics), building AI agents, LLM-powered workflows and robotics perception systems. Experience at Mercedes-Benz, Škoda/VW, Bosch and Rieter." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -39,7 +39,6 @@
   ::selection{background:var(--primary);color:#fff}
   .wrap{max-width:1100px;margin:0 auto;padding:0 28px}
 
-  /* ---- kicker / eyebrow ---- */
   .kicker{
     font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;
     text-transform:uppercase;color:var(--primary);font-weight:500;
@@ -47,7 +46,6 @@
   }
   .kicker::before{content:"";width:22px;height:1px;background:var(--brass)}
 
-  /* ---- nav ---- */
   header.nav{
     position:sticky;top:0;z-index:60;
     background:rgba(244,246,248,.82);backdrop-filter:blur(10px);
@@ -66,7 +64,6 @@
   .nav-cta:hover{border-color:var(--primary);color:var(--primary);box-shadow:0 6px 16px rgba(15,74,94,.1)}
   .nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:40px;height:38px;cursor:pointer;color:var(--ink)}
 
-  /* ---- hero ---- */
   .hero{padding:70px 0 30px;position:relative;overflow:hidden}
   .hero-grid{display:grid;grid-template-columns:1.55fr .95fr;gap:54px;align-items:center}
   .hero h1{
@@ -75,7 +72,7 @@
     margin:20px 0 0;
   }
   .hero h1 .accent{color:var(--primary)}
-  .hero .lead{font-size:1.13rem;color:var(--ink-soft);max-width:44ch;margin:22px 0 0}
+  .hero .lead{font-size:1.13rem;color:var(--ink-soft);max-width:46ch;margin:22px 0 0}
   .hero .lead b{color:var(--ink);font-weight:600}
   .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
   .btn{
@@ -108,7 +105,6 @@
   .corner.tl{top:-6px;left:-6px;border-right:0;border-bottom:0}
   .corner.br{bottom:-6px;right:-6px;border-left:0;border-top:0}
 
-  /* ---- brand strip ---- */
   .brands{margin-top:56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}
   .brands-inner{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .brands .lbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-right:8px}
@@ -116,7 +112,6 @@
   .brands .name:hover{opacity:1;color:var(--primary)}
   .brands .sep{color:var(--line);font-size:.9rem}
 
-  /* ---- stats ---- */
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:46px}
   .stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 20px;position:relative;overflow:hidden}
   .stat::before{content:"";position:absolute;top:0;left:0;width:3px;height:0;background:var(--primary);transition:height .5s ease;}
@@ -125,14 +120,12 @@
   .stat .num .plus{color:var(--brass)}
   .stat .cap{font-size:.82rem;color:var(--ink-soft);margin-top:9px;line-height:1.4}
 
-  /* ---- section frame ---- */
   section{padding:78px 0}
-  .sec-head{margin-bottom:40px;max-width:60ch}
+  .sec-head{margin-bottom:40px;max-width:62ch}
   .sec-head h2{font-family:var(--display);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:-.02em;margin:14px 0 0;line-height:1.08}
   .sec-head p{color:var(--ink-soft);margin:14px 0 0;font-size:1.02rem}
 
-  /* ---- about ---- */
-  #about{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  #about, #skills, #education{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:54px}
   .about-body p{margin:0 0 18px;color:var(--ink-soft);font-size:1.04rem}
   .about-body p b{color:var(--ink);font-weight:600}
@@ -143,7 +136,36 @@
   .about-side .v{font-weight:500;margin-top:4px;color:var(--ink)}
   .about-side .v a:hover{color:var(--primary)}
 
-  /* ---- projects ---- */
+  /* experience timeline */
+  .timeline{position:relative;margin-top:10px}
+  .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--line),var(--line-soft))}
+  .xp{position:relative;padding:0 0 34px 42px}
+  .xp:last-child{padding-bottom:0}
+  .xp .node{position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--paper);border:2px solid var(--primary);z-index:2}
+  .xp .node::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--primary);transform:scale(0);transition:transform .3s}
+  .xp.in .node::after{transform:scale(1)}
+  .xp-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
+  .xp-head h3{font-family:var(--display);font-weight:600;font-size:1.22rem;letter-spacing:-.01em;margin:0}
+  .xp-head .date{font-family:var(--mono);font-size:.74rem;color:var(--primary);white-space:nowrap}
+  .xp .role{color:var(--ink-soft);font-weight:500;font-size:.96rem;margin-top:3px}
+  .xp .role .loc{color:var(--ink-faint);font-weight:400}
+  .xp ul{margin:14px 0 0;padding:0;list-style:none}
+  .xp li{position:relative;padding-left:20px;color:var(--ink-soft);font-size:.95rem;margin-bottom:8px}
+  .xp li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:1.5px;background:var(--brass)}
+
+  /* education */
+  .edu-list{display:grid;gap:20px}
+  .edu{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 28px}
+  .edu-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
+  .edu-head h3{font-family:var(--display);font-weight:600;font-size:1.2rem;letter-spacing:-.01em;margin:0}
+  .edu-head .date{font-family:var(--mono);font-size:.74rem;color:var(--primary);white-space:nowrap}
+  .edu .degree{color:var(--ink-soft);font-weight:500;margin-top:5px;font-size:.98rem}
+  .edu .degree b{color:var(--ink)}
+  .edu .courses-lbl{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:18px 0 10px}
+  .courses{display:flex;flex-wrap:wrap;gap:8px}
+  .course{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft);background:var(--panel);border:1px solid var(--line);padding:5px 10px;border-radius:100px}
+
+  /* projects */
   .proj{margin-bottom:34px;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s, box-shadow .25s}
   .proj:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
   .proj-feature{display:grid;grid-template-columns:1fr 1.15fr}
@@ -164,42 +186,27 @@
   .thumbs img{width:100%;height:70px;object-fit:cover;border-radius:8px;border:1px solid var(--line);cursor:zoom-in;transition:transform .2s,border-color .2s}
   .thumbs img:hover{transform:translateY(-2px);border-color:var(--primary)}
 
-  /* smaller project cards */
-  .proj-min-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:6px}
+  .proj-min-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:6px}
   .proj-min{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .22s,box-shadow .22s,border-color .22s}
   .proj-min:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cdd6de}
-  .proj-min h4{font-family:var(--display);font-weight:600;font-size:1.12rem;margin:10px 0 0;letter-spacing:-.01em}
+  .proj-min h4{font-family:var(--display);font-weight:600;font-size:1.1rem;margin:10px 0 0;letter-spacing:-.01em;line-height:1.2}
   .proj-min .when{font-family:var(--mono);font-size:.72rem;color:var(--ink-faint);margin-top:7px}
   .proj-min p{color:var(--ink-soft);font-size:.92rem;margin:13px 0 0}
 
-  /* ---- experience timeline ---- */
-  .timeline{position:relative;margin-top:10px}
-  .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--line),var(--line-soft))}
-  .xp{position:relative;padding:0 0 34px 42px}
-  .xp:last-child{padding-bottom:0}
-  .xp .node{position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--panel);border:2px solid var(--primary);z-index:2}
-  .xp .node::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--primary);transform:scale(0);transition:transform .3s}
-  .xp.in .node::after{transform:scale(1)}
-  .xp-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
-  .xp-head h3{font-family:var(--display);font-weight:600;font-size:1.22rem;letter-spacing:-.01em;margin:0}
-  .xp-head .date{font-family:var(--mono);font-size:.74rem;color:var(--primary);white-space:nowrap}
-  .xp .role{color:var(--ink-soft);font-weight:500;font-size:.96rem;margin-top:3px}
-  .xp .role .loc{color:var(--ink-faint);font-weight:400}
-  .xp ul{margin:14px 0 0;padding:0;list-style:none}
-  .xp li{position:relative;padding-left:20px;color:var(--ink-soft);font-size:.95rem;margin-bottom:8px}
-  .xp li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:1.5px;background:var(--brass)}
-
-  /* ---- skills ---- */
-  #skills{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  /* skills */
   .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
   .skill-col h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
   .skill-col ul{list-style:none;margin:0;padding:0}
   .skill-col li{font-size:.94rem;color:var(--ink-soft);padding:6px 0;transition:color .2s,padding-left .2s;cursor:default}
   .skill-col li:hover{color:var(--ink);padding-left:6px}
+  .langs{margin-top:34px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:28px;align-items:center}
+  .langs .lbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+  .langs .lang{font-weight:500;color:var(--ink)}
+  .langs .lang span{font-family:var(--mono);font-size:.78rem;color:var(--primary);margin-left:6px}
 
-  /* ---- certs & education ---- */
+  /* credentials: certs + publications */
   .ce-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  .ce-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .ce-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
   .ce-card h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 18px}
   .ce-item{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line-soft)}
   .ce-item:last-child{border-bottom:0;padding-bottom:0}
@@ -207,8 +214,12 @@
   .ce-item .t{font-weight:600;color:var(--ink);font-size:.98rem}
   .ce-item .s{color:var(--ink-soft);font-size:.88rem;margin-top:2px}
   .ce-item .d{font-family:var(--mono);font-size:.72rem;color:var(--primary);white-space:nowrap}
+  .pub-item .t{font-weight:600;color:var(--ink);font-size:1rem;line-height:1.35}
+  .pub-item .s{color:var(--ink-soft);font-size:.9rem;margin-top:6px}
+  .pub-link{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-family:var(--mono);font-size:.76rem;color:var(--primary);border:1px solid var(--line);padding:8px 13px;border-radius:8px;transition:all .2s}
+  .pub-link:hover{border-color:var(--primary);background:rgba(15,74,94,.05);transform:translateY(-1px)}
+  .pub-link svg{width:14px;height:14px}
 
-  /* ---- contact / footer ---- */
   footer{background:var(--ink);color:#E8EDF1;padding:80px 0 34px;position:relative;overflow:hidden}
   footer::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% -10%,rgba(20,98,124,.4),transparent 55%)}
   .foot-inner{position:relative;z-index:2}
@@ -223,17 +234,14 @@
   .foot-links a svg{width:17px;height:17px}
   .foot-links a.mail{background:var(--primary-2);border-color:var(--primary-2)}
   .foot-links a.mail:hover{background:#1a7291}
-  .foot-bottom{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:.74rem;color:#8397A5}
-  .foot-bottom a:hover{color:#fff}
+  .foot-bottom{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-family:var(--mono);font-size:.74rem;color:#8397A5}
 
-  /* ---- lightbox ---- */
   .lb{position:fixed;inset:0;z-index:100;background:rgba(11,15,20,.92);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:32px;cursor:zoom-out}
   .lb.open{display:flex}
   .lb img{max-width:96vw;max-height:90vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.6);cursor:default}
   .lb-close{position:absolute;top:20px;right:24px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);width:42px;height:42px;border-radius:50%;font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
   .lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#cfd8de;font-family:var(--mono);font-size:.78rem}
 
-  /* ---- reveal animation ---- */
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){
@@ -242,7 +250,6 @@
     .portrait-tag .live{animation:none}
   }
 
-  /* ---- responsive ---- */
   @media (max-width:920px){
     .hero-grid{grid-template-columns:1fr;gap:36px}
     .portrait-wrap{max-width:340px}
@@ -266,21 +273,19 @@
     section{padding:56px 0}
     .stats{grid-template-columns:1fr 1fr;gap:12px}
     .skill-grid{grid-template-columns:1fr}
-    .foot-bottom{flex-direction:column}
   }
 </style>
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="brand"><span class="dot"></span>Shubham Gunjal</a>
     <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
     <a href="#contact" class="nav-cta">Get in touch</a>
@@ -288,15 +293,14 @@
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
 <main id="top">
 <section class="hero" style="padding-top:56px">
   <div class="wrap">
     <div class="hero-grid">
       <div class="reveal">
-        <span class="kicker">Data &amp; AI-Automation Engineer · Erlangen, Germany</span>
-        <h1>Engineering rigor,<br>applied to <span class="accent">data &amp; AI automation.</span></h1>
-        <p class="lead">I'm a mechanical engineer who now builds <b>Power BI analytics</b>, <b>agentic AI workflows</b>, and <b>applied ML systems</b> that turn messy operational data into decisions — across automotive manufacturing, procurement, and robotics.</p>
+        <span class="kicker">Robotics · Mechatronics · Agentic AI — Erlangen, Germany</span>
+        <h1>Engineering rigor,<br>applied to <span class="accent">robotics &amp; agentic AI.</span></h1>
+        <p class="lead">I'm a mechanical engineer and Master's student in <b>Computational Engineering (Mechatronics)</b>, building <b>AI agents</b>, <b>LLM-powered workflows</b>, and <b>robotics perception systems</b> — turning real operational data into decisions, grounded in how factories and machines actually run.</p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">View selected work
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -313,7 +317,6 @@
       </div>
     </div>
 
-    <!-- brand strip -->
     <div class="brands reveal">
       <div class="brands-inner">
         <span class="lbl">Experience across</span>
@@ -324,17 +327,16 @@
       </div>
     </div>
 
-    <!-- stats -->
     <div class="stats">
-      <div class="stat reveal"><div class="num" data-count="5"     data-suffix="+">0</div><div class="cap">years across manufacturing, procurement &amp; AI</div></div>
-      <div class="stat reveal"><div class="num" data-count="10"    data-suffix="+">0</div><div class="cap">Power BI dashboards built at Mercedes-Benz</div></div>
-      <div class="stat reveal"><div class="num" data-count="4"     data-suffix="">0</div><div class="cap">global manufacturers worked with</div></div>
-      <div class="stat reveal"><div class="num" data-count="6"     data-suffix="">0</div><div class="cap">AI, ML &amp; automation projects shipped</div></div>
+      <div class="stat reveal"><div class="num" data-count="2" data-suffix="+">0</div><div class="cap">years of hands-on industry experience</div></div>
+      <div class="stat reveal"><div class="num" data-count="4" data-suffix="">0</div><div class="cap">global manufacturers worked with</div></div>
+      <div class="stat reveal"><div class="num" data-count="3" data-suffix="">0</div><div class="cap">countries: India · USA · Germany</div></div>
+      <div class="stat reveal"><div class="num" data-count="1" data-suffix="">0</div><div class="cap">peer-reviewed publication</div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
+<!-- ABOUT -->
 <section id="about">
   <div class="wrap">
     <div class="about-grid">
@@ -342,110 +344,21 @@
         <span class="kicker">About</span>
         <h2 style="font-family:var(--display);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:-.02em;margin:14px 0 24px;line-height:1.1">From the shop floor to intelligent systems.</h2>
         <p>My foundation is <b>mechanical engineering</b> — 3D CAD in CATIA, ANSYS analysis, OEE studies, and quality systems on live production lines at Bosch and Rieter. That grounding in how factories actually run shapes everything I build today.</p>
-        <p>At <b>Škoda&nbsp;/&nbsp;Volkswagen</b> I moved into procurement analytics, building SAP-driven pipelines and reporting dashboards to steer sourcing decisions. At <b>Mercedes-Benz U.S. International</b> I built more than ten Power BI dashboards for logistics and yard operations, automated daily KPI reporting with Excel VBA, and helped develop <b>AI-agent workflows</b> for invoice auditing.</p>
-        <p>Since then I've gone deep on the modern automation stack — <b>agentic workflows with n8n and Docker, RAG with local LLMs, Text-to-SQL, ROS2 perception with YOLO, and neural networks in TensorFlow</b> — pairing engineering discipline with AI to make operations measurably better.</p>
+        <p>At <b>Škoda&nbsp;/&nbsp;Volkswagen</b> I moved into procurement analytics, building SAP-driven data pipelines and reporting dashboards to steer sourcing decisions. At <b>Mercedes-Benz U.S. International</b> I designed <b>agentic workflow automation</b> to cross-check supplier invoices against contracts, built enterprise automation tools, and developed data-intensive dashboards for autonomous-truck and yard operations.</p>
+        <p>Today my focus is <b>robotics, mechatronics and agentic AI</b>. I build AI agents and LLM-powered workflows with n8n and Docker, retrieval-augmented systems over local language models, and robotics perception pipelines with ROS2 — pairing engineering discipline with modern AI to make operations measurably better.</p>
       </div>
       <aside class="about-side reveal">
         <div class="row"><div class="k">Based in</div><div class="v">Erlangen, Bavaria, Germany</div></div>
-        <div class="row"><div class="k">Focus</div><div class="v">Data analytics · AI automation · Applied ML</div></div>
-        <div class="row"><div class="k">Education</div><div class="v">B.E. Mechanical Engineering<br><span style="color:var(--ink-soft);font-weight:400;font-size:.9rem">Savitribai Phule Pune University</span></div></div>
+        <div class="row"><div class="k">Focus</div><div class="v">Robotics · Mechatronics · Agentic AI · Data analytics</div></div>
         <div class="row"><div class="k">Email</div><div class="v"><a href="mailto:shubhamg6699@gmail.com">shubhamg6699@gmail.com</a></div></div>
         <div class="row"><div class="k">Phone</div><div class="v"><a href="tel:+4915566431657">+49 15566 431657</a></div></div>
-        <div class="row"><div class="k">Links</div><div class="v"><a href="https://www.linkedin.com/in/shubham-uttam-gunjal/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/Shubham6699" target="_blank" rel="noopener">GitHub</a></div></div>
+        <div class="row"><div class="k">LinkedIn</div><div class="v"><a href="https://www.linkedin.com/in/shubham-uttam-gunjal/" target="_blank" rel="noopener">/in/shubham-uttam-gunjal</a></div></div>
       </aside>
     </div>
   </div>
 </section>
 
-<!-- ============ PROJECTS ============ -->
-<section id="projects">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">Selected Work</span>
-      <h2>Projects that ship real outcomes.</h2>
-      <p>A mix of AI automation, applied machine learning, and business-intelligence work. Click any image to view it full-size.</p>
-    </div>
-
-    <!-- Feature 1: RobotOps -->
-    <article class="proj reveal">
-      <div class="proj-feature">
-        <div class="proj-info">
-          <span class="proj-num">PROJECT 01 · AI AUTOMATION</span>
-          <h3>RobotOps Troubleshooting Agent</h3>
-          <div class="when">Apr 2026 · n8n · Docker · RAG · Local LLMs</div>
-          <p>An AI agent that reads robot failure logs, retrieves relevant error-code and maintenance context with RAG, and generates evidence-based root-cause troubleshooting reports. Combines PDF parsing, text chunking, local embeddings, vector search, and <b>guarded Text-to-SQL</b> over a PostgreSQL log store — with LLM verification and an extension path to Jira-ready incident tickets.</p>
-          <div class="tags">
-            <span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span>
-            <span class="tag">Qdrant</span><span class="tag">Ollama</span><span class="tag">FastAPI</span><span class="tag">RAG</span>
-          </div>
-        </div>
-        <div class="proj-media">
-          <img src="assets/robotops-workflow.png" alt="RobotOps troubleshooting agent workflow in n8n" data-full="assets/robotops-workflow.png" data-cap="RobotOps Troubleshooting Agent — end-to-end n8n workflow" />
-          <span class="zoom"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg>Click to zoom</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Feature 2: Sourcing dashboard -->
-    <article class="proj reveal">
-      <div class="proj-feature rev">
-        <div class="proj-media">
-          <img src="assets/sourcing-overview.jpg" alt="Global vs Local Sourcing Analytics dashboard overview" data-full="assets/sourcing-overview.jpg" data-cap="Global vs Local Sourcing Analytics — executive overview" />
-          <span class="zoom"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg>Click to zoom</span>
-        </div>
-        <div class="proj-info">
-          <span class="proj-num">PROJECT 02 · BUSINESS INTELLIGENCE</span>
-          <h3>Global vs Local Sourcing Analytics</h3>
-          <div class="when">Nov 2025 · Power BI · DAX · Data Modeling</div>
-          <p>An interactive Power BI suite comparing global and local sourcing performance across landed cost, transport cost, supplier efficiency, and material contribution. Built with <b>DAX measures and a modeled dataset</b>, cleaned and aggregated from Excel sources, with drill-through pages dedicated to global and local supplier analysis.</p>
-          <div class="tags">
-            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Data Modeling</span>
-            <span class="tag">Excel</span><span class="tag">SQL Server</span>
-          </div>
-          <div class="thumbs">
-            <img src="assets/sourcing-overview.jpg" alt="Sourcing overview page" data-full="assets/sourcing-overview.jpg" data-cap="Global vs Local Sourcing Analytics — executive overview" />
-            <img src="assets/sourcing-global.jpg" alt="Global supplier analysis page" data-full="assets/sourcing-global.jpg" data-cap="Global supplier analysis — cost & efficiency by country" />
-            <img src="assets/sourcing-local.jpg" alt="Local supplier analysis page" data-full="assets/sourcing-local.jpg" data-cap="Local supplier analysis — European supplier breakdown" />
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Smaller projects -->
-    <div class="proj-min-grid">
-      <div class="proj-min reveal">
-        <span class="proj-num">PROJECT 03 · AI AUTOMATION</span>
-        <h4>Agentic Invoice Validation Workflow</h4>
-        <div class="when">Mar 2026 · n8n · Docker</div>
-        <p>A document-processing agent that reads invoice PDFs, extracts line data, and reasons it against coded contract conditions — classifying invoices into accept / reject outcomes. Rule-driven branching, Dockerized for production deployment.</p>
-        <div class="tags"><span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">PDF Extraction</span></div>
-      </div>
-      <div class="proj-min reveal">
-        <span class="proj-num">PROJECT 04 · COMPUTER VISION</span>
-        <h4>ROS 2 Autonomous Perception System</h4>
-        <div class="when">Feb 2026 · ROS2 · YOLO · Gazebo</div>
-        <p>A ROS2 perception pipeline integrating Gazebo simulation with real-time video over RTSP. A YOLO vision module detects pedestrians, vehicles, traffic lights, and stop signs, mapping inference to ROS2 topics for autonomous action control.</p>
-        <div class="tags"><span class="tag">ROS2</span><span class="tag">YOLO</span><span class="tag">Gazebo</span><span class="tag">RTSP</span></div>
-      </div>
-      <div class="proj-min reveal">
-        <span class="proj-num">PROJECT 05 · MACHINE LEARNING</span>
-        <h4>MNIST Digit Recognition</h4>
-        <div class="when">Dec 2025 · TensorFlow · Python</div>
-        <p>A multi-layer neural network in TensorFlow classifying handwritten digits and predicting multi-digit numbers — using dropout, ReLU, and the Adam optimizer, with results visualized in Matplotlib.</p>
-        <div class="tags"><span class="tag">TensorFlow</span><span class="tag">Python</span><span class="tag">Deep Learning</span></div>
-      </div>
-      <div class="proj-min reveal">
-        <span class="proj-num">PROJECT 06 · INDUSTRIAL DIGITALIZATION</span>
-        <h4>Digitalization of Layered Process Confirmation</h4>
-        <div class="when">Dec 2021 – Aug 2022 · Bosch Chassis Systems</div>
-        <p>An electronic LPC (eLPC) system with dashboards for audit reporting, open-point tracking, quality checks, and 5S monitoring across ABS production lines — giving associates and managers real-time audit visibility.</p>
-        <div class="tags"><span class="tag">SQL Server</span><span class="tag">Dashboards</span><span class="tag">Quality Systems</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ EXPERIENCE ============ -->
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -459,10 +372,10 @@
         <div class="xp-head"><h3>Mercedes-Benz U.S. International</h3><span class="date">Mar 2025 – Sep 2025</span></div>
         <div class="role">Intern — Transportation Logistics &amp; Material Planning <span class="loc">· Vance, AL, USA</span></div>
         <ul>
-          <li>Built 10+ Power BI dashboards for yard capacity, aged trailers, container tracking, ETA analysis, AYT-vs-manual performance, and cost forecasting.</li>
-          <li>Automated daily KPI reporting with Excel VBA for aged containers, demurrage &amp; detention, trailers, and yard capacity.</li>
-          <li>Contributed to AI-agent workflows for invoice auditing; participated in training and testing agents.</li>
-          <li>Developed a Streamlit cost-projection &amp; risk-analysis tool with Python, Pandas, and Plotly.</li>
+          <li>Designed and implemented agentic workflow automation that cross-checks supplier invoices against contract data, classifies approval outcomes, and triggers API-integrated Outlook notifications with automated summaries, exception flags, and revalidation requests.</li>
+          <li>Handled agentic workflow mapping, testing, and orchestration across approval pipelines — validating business rules, resolving edge cases, tuning agent behaviour, and driving end-to-end deployment readiness for AI-driven process automation.</li>
+          <li>Built enterprise automation tools with Power Apps, SharePoint, Python, and Excel VBA, including a project-tracking platform and an interactive Vehicle Cost Analysis application for multi-year cost, risk, and spend analysis.</li>
+          <li>Developed data-intensive dashboards for autonomous-truck analytics, shipment-ETA intelligence, and container/yard visibility, with backend transformations for movement timelines, dwell time, and operational KPIs.</li>
         </ul>
       </div>
 
@@ -471,9 +384,9 @@
         <div class="xp-head"><h3>Škoda Auto Volkswagen India</h3><span class="date">May 2023 – Aug 2023</span></div>
         <div class="role">Senior Officer — General Procurement <span class="loc">· Pune, India</span></div>
         <ul>
-          <li>Developed a procurement analytics pipeline from SAP purchase-order, quotation, pricing, and supplier data.</li>
-          <li>Built a reporting dashboard tracking team performance, price evolution, PO activity, and supplier cost trends.</li>
-          <li>Led procurement operations and supplier coordination for technical categories, driving quotation reviews.</li>
+          <li>Built a backend procurement-analytics pipeline from SAP purchase-order, quotation, pricing, and supplier data — extracting, cleansing, transforming, and structuring it for scalable sourcing and cost analysis.</li>
+          <li>Delivered an analytics and reporting dashboard tracking team performance, price evolution, PO activity, and supplier cost trends, generating insights for cost optimisation and negotiation strategy.</li>
+          <li>Led procurement operations and supplier coordination for technical categories, driving quotation reviews, commercial alignment, PO management, contract execution, and supplier follow-up across departments.</li>
         </ul>
       </div>
 
@@ -482,9 +395,9 @@
         <div class="xp-head"><h3>Bosch Chassis Systems India</h3><span class="date">Oct 2021 – Oct 2022</span></div>
         <div class="role">Graduate Apprentice <span class="loc">· Chakan, India</span></div>
         <ul>
-          <li>Digitized layered quality audits with an electronic LPC system and UI dashboards across ABS production lines.</li>
-          <li>Built a backend manufacturing data workflow in SQL Server for OEE, KPI, and quality reporting.</li>
-          <li>Automated calibration monitoring with a VBA-driven system using SAP-sourced tool data.</li>
+          <li>Digitised layered quality audits by deploying an electronic Layered Process Confirmation (eLPC) system with UI dashboards for audit reporting, quality tracking, 5S monitoring, and compliance across ABS production lines.</li>
+          <li>Developed a backend manufacturing-data workflow on SQL Server, converting production and inspection records into analysis-ready datasets for OEE, KPI, output, and quality reporting.</li>
+          <li>Automated the calibration-monitoring process with a VBA-driven system using SAP tool data — applying due-date logic and email alerts to improve compliance and cut manual effort.</li>
         </ul>
       </div>
 
@@ -493,8 +406,8 @@
         <div class="xp-head"><h3>Rieter India</h3><span class="date">Nov 2020 – Apr 2021</span></div>
         <div class="role">Intern — Sheet Metal Department <span class="loc">· Shirwal, India</span></div>
         <ul>
-          <li>Conducted OEE analysis for the sheet metal department, assessing laser-machine performance and downtime drivers.</li>
-          <li>Analyzed conveyor-based workflow and material handling to improve shop-floor productivity.</li>
+          <li>Conducted Overall Equipment Efficiency (OEE) analysis for the sheet-metal department, assessing laser-machine performance, downtime drivers, and process losses.</li>
+          <li>Analysed conveyor-based workflow and material handling to reduce inefficiencies and improve shop-floor productivity.</li>
         </ul>
       </div>
 
@@ -503,8 +416,8 @@
         <div class="xp-head"><h3>Infitech Enterprises</h3><span class="date">Dec 2020 – May 2021</span></div>
         <div class="role">Intern — Mechanical Design <span class="loc">· Pune, India</span></div>
         <ul>
-          <li>Built the complete 3D CAD model of an agricultural sprayer vehicle in CATIA, designing shafts, gear-pinion mechanism, and linkages.</li>
-          <li>Validated the design with engineering calculations, ANSYS analysis, and prototype performance trials.</li>
+          <li>Built the complete 3D CAD model of an agricultural sprayer vehicle with solid-fertilizer dispensing in CATIA — designing the rear wheel shaft, disk shaft, spur gear-pinion mechanism, connecting rod, crank linkage, and supporting frame.</li>
+          <li>Validated the design with engineering calculations, ANSYS analysis, and prototype trials, improving reliability, manufacturability, and field efficiency.</li>
         </ul>
       </div>
 
@@ -513,14 +426,135 @@
         <div class="xp-head"><h3>Conwood Engineering Works</h3><span class="date">Dec 2019 – Jan 2020</span></div>
         <div class="role">Intern — Design &amp; Production <span class="loc">· Pune, India</span></div>
         <ul>
-          <li>Developed 3D models of mechanical components and assemblies in CATIA V5 to support product design and manufacturing.</li>
+          <li>Developed 3D models of mechanical components and assemblies in CATIA V5 to support product design and manufacturing preparation.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ SKILLS ============ -->
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Education</span>
+      <h2>Where the foundation comes from.</h2>
+    </div>
+    <div class="edu-list">
+      <div class="edu reveal">
+        <div class="edu-head"><h3>Friedrich-Alexander-Universität Erlangen-Nürnberg</h3><span class="date">Oct 2023 – Present</span></div>
+        <div class="degree"><b>M.Sc. Computational Engineering</b> — Technical Application Field: Mechatronics</div>
+        <div class="courses-lbl">Selected coursework</div>
+        <div class="courses">
+          <span class="course">Robotics 1</span>
+          <span class="course">Human-centered Mechatronics &amp; Robotics</span>
+          <span class="course">Pattern Recognition</span>
+          <span class="course">Optimisation for Engineers</span>
+          <span class="course">Discrete Optimization</span>
+          <span class="course">Mechatronic Components &amp; Systems</span>
+          <span class="course">Architectures of Supercomputers</span>
+          <span class="course">Visualization</span>
+          <span class="course">Gait Analysis</span>
+        </div>
+      </div>
+      <div class="edu reveal">
+        <div class="edu-head"><h3>NBN Sinhgad Technical Institutes</h3><span class="date">Jun 2017 – Jul 2021</span></div>
+        <div class="degree"><b>B.E. Mechanical Engineering</b> — Savitribai Phule Pune University</div>
+        <div class="courses-lbl">Selected coursework</div>
+        <div class="courses">
+          <span class="course">Design of Machine Elements</span>
+          <span class="course">Theory of Machines</span>
+          <span class="course">CAD / CAM</span>
+          <span class="course">Thermodynamics</span>
+          <span class="course">Heat Transfer</span>
+          <span class="course">Turbomachines</span>
+          <span class="course">Numerical Methods &amp; Optimization</span>
+          <span class="course">Electrical &amp; Electronics Engineering</span>
+          <span class="course">Engineering Mathematics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Selected Work</span>
+      <h2>Projects that ship real outcomes.</h2>
+      <p>A mix of agentic AI, robotics perception, and data-driven engineering. Click any image to view it full-size.</p>
+    </div>
+
+    <article class="proj reveal">
+      <div class="proj-feature">
+        <div class="proj-info">
+          <span class="proj-num">PROJECT 01 · AGENTIC AI</span>
+          <h3>RobotOps Troubleshooting Agent</h3>
+          <div class="when">n8n · Docker · RAG · Local LLMs</div>
+          <p>An AI agent that reads robot failure logs, retrieves relevant error-code and maintenance context with RAG, and generates evidence-based root-cause troubleshooting reports. Combines PDF parsing, text chunking, local embeddings, vector search, and <b>guarded Text-to-SQL</b> over a PostgreSQL log store — with LLM verification and an extension path to Jira-ready incident tickets.</p>
+          <div class="tags">
+            <span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Qdrant</span><span class="tag">Ollama</span><span class="tag">FastAPI</span><span class="tag">RAG</span>
+          </div>
+        </div>
+        <div class="proj-media">
+          <img src="assets/robotops-workflow.png" alt="RobotOps troubleshooting agent workflow in n8n" data-full="assets/robotops-workflow.png" data-cap="RobotOps Troubleshooting Agent — end-to-end n8n workflow" />
+          <span class="zoom"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg>Click to zoom</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="proj-feature rev">
+        <div class="proj-media">
+          <img src="assets/sourcing-overview.jpg" alt="Global vs Local Sourcing Analytics dashboard overview" data-full="assets/sourcing-overview.jpg" data-cap="Global vs Local Sourcing Analytics — executive overview" />
+          <span class="zoom"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg>Click to zoom</span>
+        </div>
+        <div class="proj-info">
+          <span class="proj-num">PROJECT 02 · DATA ANALYTICS</span>
+          <h3>Global vs Local Sourcing Analytics</h3>
+          <div class="when">Power BI · DAX · Data Modeling</div>
+          <p>An interactive analytics suite comparing global and local sourcing performance across landed cost, transport cost, supplier efficiency, and material contribution. Built with <b>DAX measures and a modeled dataset</b>, cleaned and aggregated from source data, with drill-through pages dedicated to global and local supplier analysis.</p>
+          <div class="tags">
+            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Data Modeling</span><span class="tag">Excel</span>
+          </div>
+          <div class="thumbs">
+            <img src="assets/sourcing-overview.jpg" alt="Sourcing overview page" data-full="assets/sourcing-overview.jpg" data-cap="Global vs Local Sourcing Analytics — executive overview" />
+            <img src="assets/sourcing-global.jpg" alt="Global supplier analysis page" data-full="assets/sourcing-global.jpg" data-cap="Global supplier analysis — cost &amp; efficiency by country" />
+            <img src="assets/sourcing-local.jpg" alt="Local supplier analysis page" data-full="assets/sourcing-local.jpg" data-cap="Local supplier analysis — European supplier breakdown" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="proj-min-grid">
+      <div class="proj-min reveal">
+        <span class="proj-num">PROJECT 03 · ROBOTICS &amp; PERCEPTION</span>
+        <h4>ROS 2 Autonomous Perception System</h4>
+        <div class="when">ROS2 · YOLO · Gazebo</div>
+        <p>A ROS2 perception pipeline integrating Gazebo simulation with real-time video over RTSP. A YOLO vision module detects pedestrians, vehicles, traffic lights, and stop signs, mapping inference to ROS2 topics for autonomous action control.</p>
+        <div class="tags"><span class="tag">ROS2</span><span class="tag">YOLO</span><span class="tag">Gazebo</span><span class="tag">RTSP</span></div>
+      </div>
+      <div class="proj-min reveal">
+        <span class="proj-num">PROJECT 04 · AGENTIC AI</span>
+        <h4>Agentic Invoice Validation Workflow</h4>
+        <div class="when">n8n · Docker</div>
+        <p>A document-processing agent that reads invoice PDFs, extracts line data, and reasons it against coded contract conditions — classifying invoices into accept / reject outcomes. Rule-driven branching, Dockerised for production deployment.</p>
+        <div class="tags"><span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">PDF Extraction</span></div>
+      </div>
+      <div class="proj-min reveal">
+        <span class="proj-num">PROJECT 05 · DATA &amp; MODELING</span>
+        <h4>UI-Based Cost Projection &amp; Risk Tool</h4>
+        <div class="when">Python · Pandas · Plotly</div>
+        <p>A Python tool with an interactive UI for multi-year cost projection and risk analysis — parameter-driven scenario modeling with an analytical backend in Pandas and Plotly, delivering interactive tables, visual reports, and CSV export.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Plotly</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
 <section id="skills">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -529,31 +563,36 @@
     </div>
     <div class="skill-grid">
       <div class="skill-col reveal">
-        <h4>Data &amp; BI</h4>
-        <ul><li>Power BI</li><li>DAX</li><li>Excel VBA</li><li>Power Apps</li><li>SharePoint</li><li>SQL Server</li><li>Data modeling</li></ul>
-      </div>
-      <div class="skill-col reveal">
         <h4>AI &amp; Automation</h4>
-        <ul><li>n8n</li><li>Docker</li><li>RAG</li><li>Local LLMs · Ollama</li><li>Qdrant · Vector DB</li><li>FastAPI</li><li>Text-to-SQL</li></ul>
+        <ul><li>AI agent training &amp; testing</li><li>Workflow automation</li><li>API integrations</li><li>n8n</li><li>Power Automate</li><li>Power Apps</li></ul>
       </div>
       <div class="skill-col reveal">
-        <h4>Machine Learning</h4>
-        <ul><li>Python</li><li>TensorFlow</li><li>ROS2</li><li>YOLO · Computer Vision</li><li>Pandas</li><li>Plotly · Streamlit</li><li>Matplotlib</li></ul>
+        <h4>Robotics &amp; Programming</h4>
+        <ul><li>ROS2</li><li>Python</li><li>MATLAB</li><li>Simulink</li><li>LaTeX</li></ul>
       </div>
       <div class="skill-col reveal">
-        <h4>Engineering &amp; Systems</h4>
-        <ul><li>SAP</li><li>CATIA V5</li><li>ANSYS</li><li>OEE analysis</li><li>Lean · 5S</li><li>Procurement analytics</li><li>MATLAB · Simulink</li></ul>
+        <h4>Data &amp; Enterprise</h4>
+        <ul><li>Power BI (DAX)</li><li>SAP · SRM</li><li>MS Office (Excel-VBA)</li><li>Nesting</li><li>Globe</li></ul>
       </div>
+      <div class="skill-col reveal">
+        <h4>CAD &amp; Simulation</h4>
+        <ul><li>CATIA V5</li><li>SolidWorks</li><li>AutoCAD</li><li>Ansys</li></ul>
+      </div>
+    </div>
+    <div class="langs reveal">
+      <span class="lbl">Languages</span>
+      <span class="lang">English <span>C1</span></span>
+      <span class="lang">German <span>A2</span></span>
     </div>
   </div>
 </section>
 
-<!-- ============ CERTS & EDUCATION ============ -->
+<!-- CERTIFICATIONS & PUBLICATIONS -->
 <section id="credentials">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="kicker">Credentials</span>
-      <h2>Certifications &amp; education.</h2>
+      <h2>Certifications &amp; publications.</h2>
     </div>
     <div class="ce-grid">
       <div class="ce-card reveal">
@@ -561,22 +600,27 @@
         <div class="ce-item"><div><div class="t">MATLAB Programming Skills</div><div class="s">MathWorks</div></div><div class="d">Nov 2025</div></div>
         <div class="ce-item"><div><div class="t">Simulink Fundamentals</div><div class="s">MathWorks</div></div><div class="d">Oct 2025</div></div>
       </div>
-      <div class="ce-card reveal">
-        <h4>Education</h4>
-        <div class="ce-item"><div><div class="t">B.E. Mechanical Engineering</div><div class="s">NBN Sinhgad School of Engineering · Savitribai Phule Pune University</div></div></div>
+      <div class="ce-card pub-item reveal">
+        <h4>Publications</h4>
+        <div class="t">Design and Development of Agriculture Sprayer Vehicle with Solid Fertilizer</div>
+        <div class="s">Journal of Science &amp; Technology</div>
+        <a class="pub-link" href="https://jst.org.in/index.php/pub/article/view/849" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
+          View paper
+        </a>
       </div>
     </div>
   </div>
 </section>
 </main>
 
-<!-- ============ FOOTER / CONTACT ============ -->
+<!-- CONTACT / FOOTER -->
 <footer id="contact">
   <div class="wrap foot-inner">
     <div class="foot-cta reveal">
       <span class="kicker">Contact</span>
       <h2>Let's build something that runs better.</h2>
-      <p>I'm open to roles in data analytics, AI automation, and applied ML — based in Erlangen and happy to talk. The fastest way to reach me is email.</p>
+      <p>Open to roles in robotics, mechatronics, agentic AI &amp; automation, and data analytics — based in Erlangen, Germany.</p>
       <div class="foot-links">
         <a class="mail" href="mailto:shubhamg6699@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
@@ -586,10 +630,6 @@
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21H19v-5.6c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>
           LinkedIn
         </a>
-        <a href="https://github.com/Shubham6699" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.48A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
-          GitHub
-        </a>
         <a href="tel:+4915566431657">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
           +49 15566 431657
@@ -598,12 +638,10 @@
     </div>
     <div class="foot-bottom">
       <span>© <span id="year"></span> Shubham Gunjal · Erlangen, Germany</span>
-      <span>Designed &amp; built as a static site · Hosted on GitHub Pages</span>
     </div>
   </div>
 </footer>
 
-<!-- ============ LIGHTBOX ============ -->
 <div class="lb" id="lightbox">
   <button class="lb-close" id="lbClose" aria-label="Close">×</button>
   <img id="lbImg" src="" alt="" />
@@ -611,27 +649,22 @@
 </div>
 
 <script>
-  // year
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // mobile menu
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
   toggle.addEventListener('click', () => links.classList.toggle('show'));
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('show')));
 
-  // nav shadow on scroll
   const nav = document.getElementById('nav');
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 12);
   onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
 
-  // reveal on scroll
   const revealObs = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); revealObs.unobserve(e.target);} });
   }, {threshold:.14, rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.reveal, .xp, .stat').forEach(el => revealObs.observe(el));
 
-  // animated counters
   const countObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
@@ -641,7 +674,7 @@
       const step = (now) => {
         const p = Math.min((now - start) / dur, 1);
         const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(eased * target) + (p === 1 ? '' : '');
+        el.textContent = Math.round(eased * target);
         if (p < 1) requestAnimationFrame(step);
         else el.innerHTML = target + (suffix ? '<span class="plus">'+suffix+'</span>' : '');
       };
@@ -651,8 +684,7 @@
   }, {threshold:.6});
   document.querySelectorAll('.num[data-count]').forEach(el => countObs.observe(el));
 
-  // scroll-spy active nav
-  const sections = ['about','projects','experience','skills','contact'];
+  const sections = ['about','experience','education','projects','contact'];
   const spy = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting){
@@ -664,7 +696,6 @@
   }, {rootMargin:'-45% 0px -50% 0px'});
   sections.forEach(id => { const s = document.getElementById(id); if (s) spy.observe(s); });
 
-  // lightbox
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lbImg');
   const lbCap = document.getElementById('lbCap');
@@ -679,3 +710,4 @@
 </script>
 </body>
 </html>
+
